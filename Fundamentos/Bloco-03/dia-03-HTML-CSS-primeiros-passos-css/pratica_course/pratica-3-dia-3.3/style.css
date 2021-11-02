@@ -1,0 +1,15 @@
+h1, p {
+    text-align: center;
+    
+}
+li:hover{
+    background-color: rgb(124, 122, 124);
+    transition: all 0.3s 0.3s;
+    color:rgb(70, 4, 70)
+}
+li:active {
+    color: burlywood;
+}
+li {
+    list-style-type: none;
+}
