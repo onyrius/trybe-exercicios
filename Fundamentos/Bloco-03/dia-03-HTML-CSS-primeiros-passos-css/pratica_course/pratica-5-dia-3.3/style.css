@@ -1,0 +1,11 @@
+
+ol li {
+    background-color: yellow;
+}
+ol li:nth-child(2n):hover {
+    color: green
+    ;
+}
+ol li:nth-child(3n):hover{
+    text-transform: capitalize;
+}
