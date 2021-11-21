@@ -12,16 +12,16 @@
   </main>
   <script>
 //       Acesse o elemento elementoOndeVoceEsta .
-// console.log(document.querySelector('#elementoOndeVoceEsta'));
+console.log(document.querySelector('#elementoOndeVoceEsta'));
 // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
-// console.log(document.querySelector('#elementoOndeVoceEsta').parentNode.parentNode);
-// let pai = document.querySelector('#pai');
-// pai.style.backgroundColor = "red";
+console.log(document.querySelector('#elementoOndeVoceEsta').parentNode.parentNode);
+let pai = document.querySelector('#pai');
+pai.style.backgroundColor = "red";
 
 // // Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
-// console.log(document.querySelector('#elementoOndeVoceEsta'));
-// let elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
-// elementoOndeVoceEsta.textContent = "Cheguei no elemento pai do filho que é filho da mãe"
+console.log(document.querySelector('#elementoOndeVoceEsta'));
+let elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
+elementoOndeVoceEsta.textContent = "Cheguei no elemento pai do filho que é filho da mãe"
 
 // Acesse o primeiroFilho a partir de pai .
 console.log(document.getElementById('pai').firstElementChild);
@@ -34,5 +34,24 @@ console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
 console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling)
 // Agora acesse o terceiroFilho a partir de pai .
 console.log(document.getElementById('pai').lastElementChild.previousElementSibling)
+// Crie um irmão para elementoOndeVoceEsta .
+let brotherElemento = document.createElement('section');
+document.querySelector("#pai").appendChild(brotherElemento)
+brotherElemento.innerText = "irmão de elementoOndeVoceEsta"
+
+// Crie um filho para elementoOndeVoceEsta .
+let childElemento = document.createElement('p');
+document.querySelector('#elementoOndeVoceEsta').appendChild(childElemento);
+childElemento.innerText = "filho de elementoOndeVoceEsta"
+
+// Crie um filho para primeiroFilhoDoFilho 
+let firstSonOfPrimeiroF = document.createElement('h1');
+document.querySelector('#primeiroFilho').appendChild(firstSonOfPrimeiroF);
+firstSonOfPrimeiroF.innerText = "Olá! Sou o primeiro filho do Primeiro Filho";
+
+console.log(childElemento);
+
+
+
 
   </script>
