@@ -88,3 +88,4 @@ const hasName = (arr, name) => {
 }
 
 console.log(hasName(names, 'Ana')) */
+
